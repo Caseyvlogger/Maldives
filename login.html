@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+    ::-ms-input-placeholder {
+        /* Edge 12 -18 */
+        color: #d5d3d4;
+        font-weight: 700;
+    }
+
+    ::placeholder {
+        /* Edge 12 -18 */
+        color: #d5d3d4;
+        font-weight: 700;
+    }
+
+    input,
+    input::placeholder {
+        font: 21px sans-serif;
+        font-weight: 700;
+    }
+
+    .book-buttons {
+        background: none;
+        outline: none;
+        text-decoration: none;
+        text-shadow: none;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+        color: #fff;
+        background-color: #000d10;
+        font-size: .8888888889rem;
+        padding: 0.6111111111rem 1.1111111111rem 0.7222222222rem;
+        font-weight: 700;
+        display: inline-block;
+        line-height: 100%;
+        border-radius: 55px;
+        font-size: 1.171875vw;
+        padding: 1.02vw 1.5vw 1.12vw;
+    }
+</style>
+
+<body>
+    <div style="background-color: #000D10; width: 100%; padding:0; margin: 0;">
+        <!-- icon where? -->
+        <div>
+            <p style="color: white; font-weight: 400; font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Back
+                to
+                the Hyer® website</p>
+        </div>
+        <div>
+            <p style="color: white; font-weight: 700; font-family: Arial, Helvetica, sans-serif; font-size: 59px;">
+                Hyer®
+                Client Dashboard</p>
+        </div>
+    </div>
+    <div class="row" style="display: flex; flex-direction: row; border:1px solid orange; margin:0; padding: 0">
+        <div class="col-lg-6 col-md-10 col-sm-10" style="border: 1px solid blue; padding:30px">
+            <div>
+                <p
+                    style="color: #000D10; font-weight: 700; font-family: Arial, Helvetica, sans-serif; font-size: 49px;">
+                    Sign in
+                </p>
+            </div>
+            <div>
+                <!-- sign in form -->
+                <form>
+                    <p
+                        style="color: #8e8e95; font-weight: 700; font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin-bottom:6px">
+                        Email*</p>
+                    <div>
+                        <input type="text" placeholder="Email address" id="email"
+                            style=" width:90%; padding:0px; margin:0px; border:none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                            viewBox="0 0 256 256" class="Input_icon__2U2XY">
+                            <rect width="256" height="256" fill="none"></rect>
+                            <polyline points="224 56 128 144 32 56" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></polyline>
+                            <path d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="8"></path>
+                            <line x1="110.54541" y1="128.00013" x2="34.4668" y2="197.73926" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                            </line>
+                            <line x1="221.53418" y1="197.73926" x2="145.45424" y2="127.99964" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                            </line>
+                        </svg>
+                        <hr style="margin-bottom: 0; margin-top: 5px;">
+                        <p id="emailEmpty"
+                            style="margin-top:3px; display: none; color: #db6363; font-size: 15px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; ">
+                            This is a required field</p>
+
+                    </div>
+
+                    <div style="margin-top: 18px;">
+
+
+                        <p
+                            style="color: #8e8e95; font-weight: 700; font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin-bottom:6px">
+                            Password</p>
+                        <input type="password" placeholder="Password" id="password"
+                            style=" width:90%; padding:0; margin:0; border:none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                            viewBox="0 0 256 256" class="Input_icon__2U2XY">
+                            <rect width="256" height="256" fill="none"></rect>
+                            <rect x="39.99414" y="88" width="176" height="128" rx="8" stroke-width="8"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+                            <path d="M91.99414,88V52a36,36,0,1,1,72,0V88" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+                        </svg>
+                        <hr style="margin-bottom: 0; margin-top: 5px;">
+                        <p id="passwordEmpty"
+                            style="margin-top:3px; display: none; color: #db6363; font-size: 15px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; ">
+                            This is a required field</p>
+
+                    </div>
+                    <button style="margin-top: 20px;" class="book-buttons">Sign In</button>
+                </form>
+
+            </div>
+            <div style="margin-top:50px; flex-wrap: wrap;" class="row">
+                <div class="col-lg-5 col-md-12" style="display: flex;flex-direction: row;">
+                    <p
+                        style="font-size: 16px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; color:#8e8e95">
+                        Lost
+                        your password?
+                    </p>
+                    <p>
+                        <a style="font-size: 16px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; color:#bc7155; margin-left: 3px;"
+                            href="">Reset</a>
+                    </p>
+                </div>
+                <div class="col-lg-7 col-md-12" style="display: flex;flex-direction: row;">
+                    <p
+                        style="font-size: 16px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; color:#8e8e95">
+                        Don't have an account yet?
+                    </p>
+                    <p>
+                        <a style="font-size: 16px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; color:#bc7155; margin-left: 3px;"
+                            href="">Register</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-2 col-sm-2"></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#email').on('input', function () {
+                if ($(this).val() === '') {
+                    $('#emailEmpty').show();
+                } else {
+                    $('#emailEmpty').hide();
+                }
+            });
+            $('#password').on('input', function () {
+                if ($(this).val() === '') {
+                    $('#passwordEmpty').show();
+                } else {
+                    $('#passwordEmpty').hide();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
